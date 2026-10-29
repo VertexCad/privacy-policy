@@ -31,13 +31,13 @@ Vertex CAD can optionally connect to the free PC Inventor Bridge, which you inst
 ---
 
 ### 4. Network Use
-* **PDF viewer component:** When you open a PDF, the app may download the open-source PDF.js rendering component from the cdnjs.cloudflare.com content network. Only that component is requested; your PDF file stays on your device. Cloudflare may log standard request details such as IP address, as described in the [Cloudflare Privacy Policy](https://www.cloudflare.com/privacypolicy/).
-* **Bridge download link:** Opening or sharing the bridge download link uses your browser or Android's share sheet.
+* **No outside requests:** Everything the app needs to open files, including the PDF viewer, is built into the app. It works offline and makes no requests to the internet on its own.
+* **Bridge download link:** Opening or sharing the bridge download link uses your browser or Android's share sheet, only when you tap it.
 
 ---
 
 ### 5. Device Permissions
-* **`INTERNET`:** Used for the optional connection to the PC Inventor Bridge on your own network and for loading the PDF viewer component.
+* **`INTERNET`:** Used only for the optional connection to the PC Inventor Bridge on your own network.
 * **`READ_EXTERNAL_STORAGE` / `READ_MEDIA_IMAGES`:** Used only to open files you select and to save exported images.
 
 ---
